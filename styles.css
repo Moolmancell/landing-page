@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    
 }
 
 .header {
@@ -7,13 +8,16 @@ body {
     justify-content: space-between;
     align-items: center;
     height: 6vh;
-    
+    padding: 0.5%;
+    color: white;
+    background-color: black;
 }
 
 .logo {
     margin: 2vw;
     padding-left: 2vw;
     font-size: min(9vw, 30px);
+    font-weight: bolder;
 }
 
 ul {
@@ -21,7 +25,9 @@ ul {
     list-style-type: none;
     gap: 35px;
     padding-right: 2vw;
-    font-size: min(4vw, 20px);
+    font-size: min(4.5vw, 20px);
     align-items: center;
     text-align: center;
+    margin: 2vw;
+    padding-left: 0;
 }
