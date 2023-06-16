@@ -5,12 +5,13 @@ body {
 
 .header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     height: 6vh;
+    min-height: 50px;
     padding: 0.5%;
     color: white;
     background-color: black;
+    border-bottom: 1px solid white;
 }
 
 .logo {
@@ -23,11 +24,42 @@ body {
 ul {
     display: flex;
     list-style-type: none;
-    gap: 35px;
+    gap: min(35px, 4vw);
     padding-right: 2vw;
     font-size: min(4.5vw, 20px);
     align-items: center;
     text-align: center;
     margin: 2vw;
     padding-left: 0;
+}
+
+.header-content {
+    margin-left: auto;
+}
+
+.intro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: black;
+    align-content: space-evenly;
+    align-items: center;
+}
+
+.intro div {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    color: white;
+    padding: 2vh 5vw;
+}
+
+.intro div p {
+    font-size: min(25px, 5vw);
+}
+
+img {
+   max-width: 100%;
+   height: auto;
+   transform: scale();
 }
