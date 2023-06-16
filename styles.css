@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6vh;
+    
+}
+
+.logo {
+    margin: 2vw;
+    padding-left: 2vw;
+    font-size: min(9vw, 30px);
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    gap: 35px;
+    padding-right: 2vw;
+    font-size: min(4vw, 20px);
+    align-items: center;
+    text-align: center;
+}
