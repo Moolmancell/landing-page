@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    
+    font-family: 'Libre Baskerville', serif;
 }
 
 .header {
@@ -18,7 +18,8 @@ body {
     margin: 2vw;
     padding-left: 2vw;
     font-size: min(9vw, 30px);
-    font-weight: bolder;
+    font-weight: 700;
+    font-style: italic;
 }
 
 ul {
