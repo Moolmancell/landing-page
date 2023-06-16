@@ -1,6 +1,8 @@
 body {
     margin: 0;
     font-family: 'Libre Baskerville', serif;
+    background-color: black;
+    color: white;
 }
 
 .header {
@@ -9,8 +11,6 @@ body {
     height: 6vh;
     min-height: 50px;
     padding: 0.5%;
-    color: white;
-    background-color: black;
     border-bottom: 1px solid white;
 }
 
@@ -27,7 +27,7 @@ ul {
     list-style-type: none;
     gap: min(35px, 4vw);
     padding-right: 2vw;
-    font-size: min(4.5vw, 20px);
+    font-size: min(4vw, 20px);
     align-items: center;
     text-align: center;
     margin: 2vw;
@@ -42,7 +42,6 @@ ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color: black;
     align-content: space-evenly;
     align-items: center;
 }
@@ -51,16 +50,46 @@ ul {
     display: flex;
     flex-direction: column;
     width: 600px;
-    color: white;
     padding: 2vh 5vw;
+}
+
+.intro div h1 {
+    font-size: min(50px, 7vw);
+    font-weight: 400;
 }
 
 .intro div p {
     font-size: min(25px, 5vw);
+    font-style: italic;
+
 }
 
-img {
+a {
+    text-decoration: none;
+    color: white;
+    padding: 1vw;
+    background-color: black;
+}
+
+a:hover {
+    filter: invert();
+}
+
+button {
+    padding: 0.5vw;
+    background-color: black;
+    color: white;
+    font-size: min(25px, 5vw);
+    border: 2px solid white;
+    margin-top: 2vh;
+    font-family: 'Libre Baskerville', serif;
+}
+
+button:hover {
+    filter: invert;
+}
+
+.intro img {
    max-width: 100%;
    height: auto;
-   transform: scale();
 }
