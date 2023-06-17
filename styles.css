@@ -96,15 +96,15 @@ button:hover {
 
 .gallery {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    gap: 20px 20px;
+    align-items: center;
     flex-wrap: wrap;
-    margin: auto;
+    margin: 10vh auto auto auto;
     width: 80vw;
     padding: 2vw;
-}
-
-.gallery:hover {
-    filter: invert();
+    text-align: center;
+    font-weight: bold;
 }
 
 .gallery img {
@@ -112,4 +112,24 @@ button:hover {
     height: 300px;
     filter: grayscale(100%);
     border-radius: 5px;
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 900px;
+    margin: 30vh auto; 
+    padding: 5vw;
+    background-color: white;
+    color: black;
+}
+
+.quote h2 {
+    font-size: min(5vw, 60px);
+}
+
+.quote p {
+    text-align: end;
+
 }
