@@ -104,7 +104,17 @@ button:hover {
     width: 80vw;
     padding: 2vw;
     text-align: center;
-    font-weight: bold;
+    font-weight: lighter;
+}
+
+.gallery div:hover {
+    animation: invert 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes invert {
+    0% {filter: invert(0%);}
+    100% {filter: invert(100%)}
 }
 
 .gallery img {
@@ -121,8 +131,8 @@ button:hover {
     max-width: 900px;
     margin: 30vh auto; 
     padding: 5vw;
-    background-color: white;
-    color: black;
+    border: 5px solid white;
+    color: white;
 }
 
 .quote h2 {
