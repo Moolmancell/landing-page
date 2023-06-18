@@ -12,6 +12,10 @@ body {
     min-height: 50px;
     padding: 0.5%;
     border-bottom: 1px solid white;
+    position: sticky;
+    background-color: black;
+    top: 0;
+    z-index: 10;
 }
 
 .logo {
@@ -105,6 +109,7 @@ button:hover {
     padding: 2vw;
     text-align: center;
     font-weight: lighter;
+    font-size: min(4vw, 20px);
 }
 
 .gallery div:hover {
@@ -118,8 +123,10 @@ button:hover {
 }
 
 .gallery img {
-    width: 300px;
-    height: 300px;
+    max-width: 300px;
+    max-height: 300px;
+    width: 50vw;
+    height: 50vw;
     filter: grayscale(100%);
     border-radius: 5px;
 }
@@ -131,18 +138,52 @@ button:hover {
     max-width: 900px;
     margin: 20vw auto; 
     padding: 5vw;
-    border: 5px solid white;
+    border: 2px solid white;
     background-image: url("giphy.gif");
     background-size: cover;
     color: white;
 }
 
 .quote h2 {
-    font-size: min(5vw, 50px);
+    font-size: min(5vw + 10px, 50px);
     filter: invert();
 }
 
 .quote p {
     text-align: end;
     filter: invert();
+}
+
+
+.signup {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(43, 42, 42);
+    margin: 0 10vw;
+    gap: 5vw;
+    padding: 5vw;
+    border-top: 2px solid white;
+    flex-wrap: wrap;
+}
+
+.signup button {
+    padding: min(2vw, 20px);
+    justify-self: stretch;
+    font-size: min(4vw, 28px);
+}
+
+.signup h1 {
+    font-size: min(5vw, 35px);
+}
+
+.signup p {
+    font-size: min(3vw, 25px);
+}
+
+footer {
+    text-align: center;
+    padding: 1vh;
+    background-color: grey;
+    font-size: min(2vw, 10px);
 }
