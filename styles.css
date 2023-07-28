@@ -110,13 +110,7 @@ button:hover {
     text-align: center;
     font-weight: lighter;
     font-size: min(4vw, 20px);
-    transition: filter 0.5s;
 }
-
-.gallery div:hover {
-    filter: invert()
-}
-
 
 .gallery img {
     max-width: 300px;
@@ -125,6 +119,11 @@ button:hover {
     height: 50vw;
     filter: grayscale(100%);
     border-radius: 5px;
+    transition: all 0.5s;
+}
+
+.gallery img:hover {
+    filter: grayscale(100%) invert();
 }
 
 .quote {
