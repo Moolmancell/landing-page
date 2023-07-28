@@ -110,17 +110,13 @@ button:hover {
     text-align: center;
     font-weight: lighter;
     font-size: min(4vw, 20px);
+    transition: filter 0.5s;
 }
 
 .gallery div:hover {
-    animation: invert 1s;
-    animation-fill-mode: both;
+    filter: invert()
 }
 
-@keyframes invert {
-    0% {filter: invert(0%);}
-    100% {filter: invert(100%)}
-}
 
 .gallery img {
     max-width: 300px;
